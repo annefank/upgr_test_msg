@@ -1,67 +1,62 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-ov_winetype_manager,ov_winetype_manager,model_ov_wine_winetype,group_ov_wine_manager,1,1,1,1
-ov_grape_manager,ov_grape_manager,model_ov_wine_grape,group_ov_wine_manager,1,1,1,1
-ov_food_manager,ov_food_manager,model_ov_wine_food,group_ov_wine_manager,1,1,1,1
-ov_wine_tags_manager,ov_wine_tags_manager,model_ov_wine_wine_tags,group_ov_wine_manager,1,1,1,1
-ov_wine_sustainability_manager,ov_wine_sustainability_manager,model_ov_wine_sustainabilitytype,group_ov_wine_manager,1,1,1,1
-ov_vintage_year_manager,ov_vintage_year_manager,model_ov_wine_vintage_year,group_ov_wine_manager,1,1,1,1
-ov_storable_year_manager,ov_storable_year_manager,model_ov_wine_storable_year,group_ov_wine_manager,1,1,1,1
-ov_serving_temp_manager,ov_serving_temp_year_manager,model_ov_wine_serving_temp,group_ov_wine_manager,1,1,1,1
-ov_country_manager,ov_country_manager,model_ov_wine_country,group_ov_wine_manager,1,1,1,1
-ov_region_manager,ov_region_manager,model_ov_wine_region,group_ov_wine_manager,1,1,1,1
-ov_city_manager,ov_city_manager,model_ov_wine_city,group_ov_wine_manager,1,1,1,1
-ov_producer_manager,ov_producer_manager,model_ov_wine_producer,group_ov_wine_manager,1,1,1,1
-ov_swk_category_manager,ov_swk_category_manager,model_ov_wine_swk_category,group_ov_wine_manager,1,1,1,1
-ov_swk_region_manager,ov_swk_region_manager,model_ov_wine_swk_region,group_ov_wine_manager,1,1,1,1
-ov_swk_city_manager,ov_swk_city_manager,model_ov_wine_swk_city,group_ov_wine_manager,1,1,1,1
-ov_winetype_user,ov_winetype_user,model_ov_wine_winetype,group_ov_wine_user,1,0,0,1
-ov_grape_user,ov_grape_user,model_ov_wine_grape,group_ov_wine_user,1,0,0,1
-ov_food_user,ov_food_user,model_ov_wine_food,group_ov_wine_user,1,0,0,1
-ov_wine_tags_user,ov_wine_tags_user,model_ov_wine_wine_tags,group_ov_wine_user,1,0,0,1
-ov_wine_sustainabilitytype_user,ov_wine_sustainabilitytype_user,model_ov_wine_sustainabilitytype,group_ov_wine_user,1,0,0,1
-ov_vintage_year_user,ov_vintage_year_user,model_ov_wine_vintage_year,group_ov_wine_user,1,0,0,1
-ov_storable_year_user,ov_storable_year_user,model_ov_wine_storable_year,group_ov_wine_user,1,0,0,1
-ov_serving_temp_user,ov_serving_temp_user,model_ov_wine_serving_temp,group_ov_wine_user,1,0,0,1
-ov_country_user,ov_country_user,model_ov_wine_country,group_ov_wine_user,1,0,0,1
-ov_region_user,ov_region_user,model_ov_wine_region,group_ov_wine_user,1,0,0,1
-ov_city_user,ov_city_user,model_ov_wine_city,group_ov_wine_user,1,0,0,1
-ov_producer_user,ov_producer_user,model_ov_wine_producer,group_ov_wine_user,1,0,0,1
-ov_swk_category_user,ov_swk_category_user,model_ov_wine_swk_category,group_ov_wine_user,1,0,0,1
-ov_swk_region_user,ov_swk_region_user,model_ov_wine_swk_region,group_ov_wine_user,1,0,0,1
-ov_swk_city_user,ov_swk_city_user,model_ov_wine_swk_city,group_ov_wine_user,1,0,0,1
-ov_country_public,ov_country_public,model_ov_wine_country,base.group_public,1,0,0,0
-ov_region_public,ov_region_public,model_ov_wine_region,base.group_public,1,0,0,0
-ov_producer_public,ov_producer_public,model_ov_wine_producer,base.group_public,1,0,0,0
-ov_winetype_public,ov_winetype_public,model_ov_wine_winetype,base.group_public,1,0,0,0
-ov_grape_public,ov_grape_public,model_ov_wine_grape,base.group_public,1,0,0,0
-ov_food_public,ov_food_public,model_ov_wine_food,base.group_public,1,0,0,0
-ov_wine_tags_public,ov_wine_tags_public,model_ov_wine_wine_tags,base.group_public,1,0,0,0
-ov_wine_sustainabilitytype_public,ov_wine_sustainabilitytype_public,model_ov_wine_sustainabilitytype,base.group_public,1,0,0,0
-ov_vintage_year_public,ov_vintage_year_public,model_ov_wine_vintage_year,base.group_public,1,0,0,0
-ov_storable_year_public,ov_storable_year_pubic,model_ov_wine_storable_year,base.group_public,1,0,0,0
-ov_serving_temp_public,ov_serving_temp_public,model_ov_wine_serving_temp,base.group_public,1,0,0,0
-ov_storable_year_public,ov_storable_year_public,model_ov_wine_storable_year,base.group_public,1,0,0,0
-ov_country_public,ov_country_public,model_ov_wine_country,base.group_public,1,0,0,0
-ov_city_public,ov_city_public,model_ov_wine_city,base.group_public,1,0,0,0
-ov_producer_public,ov_producer_public,model_ov_wine_producer,base.group_public,1,0,0,0
-ov_swk_category_public,ov_swk_category_public,model_ov_wine_swk_category,base.group_public,1,0,0,0
-ov_swk_region_public,ov_swk_region_public,model_ov_wine_swk_region,base.group_public,1,0,0,0
-ov_swk_city_public,ov_swk_city_public,model_ov_wine_swk_city,base.group_public,1,0,0,0
-ov_country_portal,ov_country_portal,model_ov_wine_country,base.group_portal,1,0,0,0
-ov_region_portal,ov_region_portal,model_ov_wine_region,base.group_portal,1,0,0,0
-ov_producer_portal,ov_producer_portal,model_ov_wine_producer,base.group_portal,1,0,0,0
-ov_winetype_portal,ov_winetype_portal,model_ov_wine_winetype,base.group_portal,1,0,0,0
-ov_grape_portal,ov_grape_portal,model_ov_wine_grape,base.group_portal,1,0,0,0
-ov_food_portal,ov_food_portal,model_ov_wine_food,base.group_portal,1,0,0,0
-ov_wine_tags_portal,ov_wine_tags_portal,model_ov_wine_wine_tags,base.group_portal,1,0,0,0
-ov_wine_sustainabilitytype_portal,ov_wine_sustainabilitytype_portal,model_ov_wine_sustainabilitytype,base.group_portal,1,0,0,0
-ov_vintage_year_portal,ov_vintage_year_portal,model_ov_wine_vintage_year,base.group_portal,1,0,0,0
-ov_storable_year_portal,ov_storable_year_portal,model_ov_wine_storable_year,base.group_portal,1,0,0,0
-ov_serving_temp_portal,ov_serving_temp_portal,model_ov_wine_serving_temp,base.group_portal,1,0,0,0
-ov_storable_year_portal,ov_storable_year_portal,model_ov_wine_storable_year,base.group_portal,1,0,0,0
-ov_country_portal,ov_country_portal,model_ov_wine_country,base.group_portal,1,0,0,0
-ov_city_portal,ov_city_portal,model_ov_wine_city,base.group_portal,1,0,0,0
-ov_producer_portal,ov_producer_portal,model_ov_wine_producer,base.group_portal,1,0,0,0
-ov_swk_category_portal,ov_swk_category_portal,model_ov_wine_swk_category,base.group_portal,1,0,0,0
-ov_swk_region_portal,ov_swk_region_portal,model_ov_wine_swk_region,base.group_portal,1,0,0,0
-ov_swk_city_portal,ov_swk_city_portal,model_ov_wine_swk_city,base.group_portal,1,0,0,0
+ INSERT INTO ir_model_data (module, name, model, res_id, noupdate)VALUES 
+ ('ov_wine', 'ov_winetype_manager', 'ir.model.access', 675, false), 
+ ('ov_wine', 'ov_grape_manager', 'ir.model.access', 676, false), 
+ ('ov_wine', 'ov_food_manager', 'ir.model.access', 677, false), 
+ ('ov_wine', 'ov_wine_tags_manager', 'ir.model.access', 678, false), 
+ ('ov_wine', 'ov_wine_sustainability_manager', 'ir.model.access', 679, false), 
+ ('ov_wine', 'ov_vintage_year_manager', 'ir.model.access', 680, false), 
+ ('ov_wine', 'ov_storable_year_manager', 'ir.model.access', 681, false), 
+ ('ov_wine', 'ov_serving_temp_manager', 'ir.model.access', 682, false), 
+ ('ov_wine', 'ov_country_manager', 'ir.model.access', 683, false), 
+ ('ov_wine', 'ov_region_manager', 'ir.model.access', 684, false), 
+ ('ov_wine', 'ov_city_manager', 'ir.model.access', 685, false), 
+ ('ov_wine', 'ov_producer_manager', 'ir.model.access', 686, false), 
+ ('ov_wine', 'ov_swk_category_manager', 'ir.model.access', 687, false), 
+ ('ov_wine', 'ov_swk_region_manager', 'ir.model.access', 688, false), 
+ ('ov_wine', 'ov_swk_city_manager', 'ir.model.access', 689, false), 
+ ('ov_wine', 'ov_winetype_user', 'ir.model.access', 690, false), 
+ ('ov_wine', 'ov_grape_user', 'ir.model.access', 691, false), 
+ ('ov_wine', 'ov_food_user', 'ir.model.access', 692, false), 
+ ('ov_wine', 'ov_wine_tags_user', 'ir.model.access', 693, false), 
+ ('ov_wine', 'ov_wine_sustainabilitytype_user', 'ir.model.access', 694, false), 
+ ('ov_wine', 'ov_vintage_year_user', 'ir.model.access', 695, false), 
+ ('ov_wine', 'ov_storable_year_user', 'ir.model.access', 696, false), 
+ ('ov_wine', 'ov_serving_temp_user', 'ir.model.access', 697, false), 
+ ('ov_wine', 'ov_country_user', 'ir.model.access', 698, false), 
+ ('ov_wine', 'ov_region_user', 'ir.model.access', 699, false), 
+ ('ov_wine', 'ov_city_user', 'ir.model.access', 700, false), 
+ ('ov_wine', 'ov_producer_user', 'ir.model.access', 701, false), 
+ ('ov_wine', 'ov_swk_category_user', 'ir.model.access', 702, false), 
+ ('ov_wine', 'ov_swk_region_user', 'ir.model.access', 703, false), 
+ ('ov_wine', 'ov_swk_city_user', 'ir.model.access', 704, false), 
+ ('ov_wine', 'ov_country_public', 'ir.model.access', 705, false), 
+ ('ov_wine', 'ov_region_public', 'ir.model.access', 706, false), 
+ ('ov_wine', 'ov_producer_public', 'ir.model.access', 707, false), 
+ ('ov_wine', 'ov_winetype_public', 'ir.model.access', 708, false), 
+ ('ov_wine', 'ov_grape_public', 'ir.model.access', 709, false), 
+ ('ov_wine', 'ov_food_public', 'ir.model.access', 710, false), 
+ ('ov_wine', 'ov_wine_tags_public', 'ir.model.access', 711, false), 
+ ('ov_wine', 'ov_wine_sustainabilitytype_public', 'ir.model.access', 712, false), 
+ ('ov_wine', 'ov_vintage_year_public', 'ir.model.access', 713, false), 
+ ('ov_wine', 'ov_storable_year_public', 'ir.model.access', 714, false), 
+ ('ov_wine', 'ov_serving_temp_public', 'ir.model.access', 715, false), 
+ ('ov_wine', 'ov_city_public', 'ir.model.access', 718, false), 
+ ('ov_wine', 'ov_swk_category_public', 'ir.model.access', 720, false), 
+ ('ov_wine', 'ov_swk_region_public', 'ir.model.access', 721, false), 
+ ('ov_wine', 'ov_swk_city_public', 'ir.model.access', 722, false), 
+ ('ov_wine', 'ov_country_portal', 'ir.model.access', 723, false), 
+ ('ov_wine', 'ov_region_portal', 'ir.model.access', 724, false), 
+ ('ov_wine', 'ov_producer_portal', 'ir.model.access', 725, false), 
+ ('ov_wine', 'ov_winetype_portal', 'ir.model.access', 726, false), 
+ ('ov_wine', 'ov_grape_portal', 'ir.model.access', 727, false), 
+ ('ov_wine', 'ov_food_portal', 'ir.model.access', 728, false), 
+ ('ov_wine', 'ov_wine_tags_portal', 'ir.model.access', 729, false), 
+ ('ov_wine', 'ov_wine_sustainabilitytype_portal', 'ir.model.access', 730, false), 
+ ('ov_wine', 'ov_vintage_year_portal', 'ir.model.access', 731, false), 
+ ('ov_wine', 'ov_storable_year_portal', 'ir.model.access', 732, false), 
+ ('ov_wine', 'ov_serving_temp_portal', 'ir.model.access', 733, false), 
+ ('ov_wine', 'ov_city_portal', 'ir.model.access', 736, false), 
+ ('ov_wine', 'ov_swk_category_portal', 'ir.model.access', 738, false), 
+ ('ov_wine', 'ov_swk_region_portal', 'ir.model.access', 739, false), 
+ ('ov_wine', 'ov_swk_city_portal', 'ir.model.access', 740, false)
+ 
