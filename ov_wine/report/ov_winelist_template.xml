@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ov_wine.winelist_gastro_template">
+        <t t-set="pricelist_id" t-value="3"/>
+        <t t-call="ov_wine.winelist_template"/>
+    </template>
+    <template id="ov_wine.winelist_dealer_template">
+        <t t-set="pricelist_id" t-value="17"/>
+        <t t-call="ov_wine.winelist_template"/>
+    </template>
+    <template id="ov_wine.winelist_web_template">
+        <t t-set="pricelist_id" t-value="1"/>
+        <t t-call="ov_wine.winelist_template"/>
+    </template>
+    <template id="ov_wine.winelist_palettes_template">
+        <t t-set="pricelist_id" t-value="18"/>
+        <t t-call="ov_wine.winelist_template"/>
+    </template>
+    <template id="winelist_all_prices_sales_template">
+        <t t-set="pricelist_id" t-value="-1"/>
+        <t t-set="pricelist_col3" t-value="3"/>
+        <t t-set="pricelist_col4" t-value="17"/>
+        <t t-set="pricelist_col5" t-value="18"/>
+        <t t-call="ov_wine.winelist_template"/>
+    </template>
+    <template id="winelist_all_prices_template">
+        <t t-set="pricelist_id" t-value="-2"/>
+        <t t-set="pricelist_col3" t-value="3"/>
+        <t t-set="pricelist_col4" t-value="17"/>
+        <t t-set="pricelist_col5" t-value="18"/>
+        <t t-call="ov_wine.winelist_template"/>
+    </template>
+
+
+    <template id="ov_wine.winelist_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <tbody>
+                        <!--                        <t t-if="int(pricelist_id)!=3"> &lt;!&ndash; B2B-pricelist? &ndash;&gt;-->
+                        <!--                            <t t-set="pricelist_id" t-value="1"/> &lt;!&ndash; if no or not set, use default &ndash;&gt;-->
+                        <!--                        </t>-->
+
+                        <p>
+                            <t t-esc="myHeader"/>
+                        </p>
+
+                        <t t-set="current_winetype" t-value=""/>
+                        <t t-set="current_country" t-value=""/>
+                        <t t-set="current_region" t-value=""/>
+                        <t t-set="linecounter" t-value="1"/>
+
+                        <t t-set="page_change_winetype" t-value="1"/>
+                        <t t-set="page_change_country" t-value="50"/>
+                        <t t-set="page_change_region" t-value="54"/>
+                        <t t-set="page_change_row" t-value="56"/>
+
+                        <!-- Normalflaschen -->
+
+                        <t t-set="all" t-value="docs"/>
+
+
+                        <t t-foreach="'Normalflaschen','Kleinflaschen','Grossflaschen','Spirituosen','Wild- und Direktsäfte'"
+                           t-as="wine_group">
+                            <t t-if="wine_group!='Normalflaschen'">    <!-- new page if not first page -->
+                                <div style="page-break-before: always;"/>
+                                <table>
+                                    <tr>
+                                        <td style="width:100%">
+                                            <span style="font-weight:bold;font-size:24px">
+                                                <t t-esc="wine_group"/>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <t t-set="current_winetype" t-value=""/>
+                                <t t-set="current_country" t-value=""/>
+                                <t t-set="current_region" t-value=""/>
+                                <t t-set="linecounter" t-value="4"/>
+                            </t>
+
+                            <t t-if="wine_group=='Normalflaschen'">
+                                <!-- <p>Normalflaschen - setting filter</p>-->
+                                <t t-set="current_section"
+                                   t-value="docs.filtered(lambda x: ((x.uom_id.name=='75 cl' or x.uom_id.name=='70 cl') and x.categ_id.name =='Weine')).sorted(key=lambda r: (r.winetype_id.order, r.country_id.order, r.region_id.order, r.producer_id.order, r.name, r.vintage_year_id.order))"/>
+                            </t>
+                            <t t-if="wine_group=='Kleinflaschen'">
+                                <t t-set="page_change_winetype" t-value="45"/>
+                                <!--<p>kleinflaschen - setting filter</p>-->
+                                <t t-set="current_section"
+                                   t-value="docs.filtered(lambda x: ((x.uom_id.name=='20 cl' or x.uom_id.name=='33 cl' or x.uom_id.name=='35 cl' or x.uom_id.name=='37.5 cl' or x.uom_id.name=='50 cl') and x.categ_id.name =='Weine')).sorted(key=lambda r: (r.winetype_id.order, r.country_id.order, r.region_id.order, r.producer_id.order, r.name, r.uom_id.order, r.vintage_year_id.order))"/>
+                            </t>
+                            <t t-if="wine_group=='Grossflaschen'">
+                                <!--<p>Grossflaschen - setting filter</p>-->
+                                <t t-set="current_section"
+                                   t-value="docs.filtered(lambda x: ((x.uom_id.name=='150 cl' or x.uom_id.name=='300 cl' or x.uom_id.name=='500 cl' or x.uom_id.name=='600 cl') and x.categ_id.name =='Weine')).sorted(key=lambda r: (r.winetype_id.order, r.country_id.order, r.region_id.order, r.producer_id.order, r.name, r.uom_id.order, r.vintage_year_id.order))"/>
+                            </t>
+                            <t t-if="wine_group=='Spirituosen'">
+                                <!--<p>Grossflaschen - setting filter</p>-->
+                                <t t-set="current_section"
+                                   t-value="docs.filtered(lambda x: ((x.categ_id.name =='Spirituosen'))).sorted(key=lambda r: (r.winetype_id.order, r.country_id.order, r.region_id.order, r.producer_id.order, r.name, r.vintage_year_id.order))"/>
+                            </t>
+                            <t t-if="wine_group=='Wild- und Direktsäfte'">
+                                <!--  <p>Grossflaschen - setting filter</p>-->
+                                <t t-set="current_section"
+                                   t-value="docs.filtered(lambda x: ((x.categ_id.name =='Wild- und Direktsäfte'))).sorted(key=lambda r: (r.winetype_id.order, r.country_id.order, r.region_id.order, r.producer_id.order, r.name, r.vintage_year_id.order))"/>
+                            </t>
+
+
+                            <!--- Bottle-size (70cl or 75cl) and winetype!='Andere' , order by winetype, country, region, producer, vintage -->
+                            <!--                            <t t-foreach="docs.filtered(lambda x: ((x.uom_id.name=='75 cl' or x.uom_id.name=='70 cl') and x.winetype_id.name !='Andere' and x.winetype_id.name !='Spirituosen')).sorted(key=lambda r: (r.winetype_id.order, r.country_id.order, r.region_id.order, r.producer_id.order, r.vintage_year_id.order))"-->
+                            <!--                               t-as="item">-->
+                            <t t-foreach="current_section" t-as="item">
+                                <!-- check if new page is needed -->
+                                <t t-if="(linecounter &gt; page_change_row)">
+                                    <!-- new page ? -->
+                                    <div style="page-break-before: always;"/>
+                                    <t t-set="linecounter" t-value="1"/>
+                                </t>
+
+
+                                <!-- check if new Winetype -->
+                                <t t-if="(item.winetype_id.name!=current_winetype and item.winetype_id.name!='Spirituosen' and item.winetype_id.name!='Andere')">
+                                    <!-- new winetype -->
+                                    <!-- check if new page is needed -->
+                                    <t t-if="(linecounter &gt; page_change_winetype)">
+                                        <!-- no new page, just add space -->
+                                        <div style="page-break-before: always;"/>
+                                        <!-- yes, new page -->
+                                        <t t-set="linecounter" t-value="1"/>
+                                    </t>
+                                    <t t-if="(linecounter &lt;= page_change_winetype and linecounter!=1)">
+                                        <!-- no, no new page, just add some space -->
+                                        <table>
+                                            <tr>
+                                                <td height="30" colspan="5"></td>
+                                            </tr>
+                                        </table>
+                                        <t t-set="linecounter" t-value="linecounter+1"/>
+                                    </t>
+                                    <table>                                             <!-- write new country-name -->
+                                        <tr>
+                                            <td style="width:100%">
+                                                <span style="font-weight:bold;font-size:24px">
+                                                    <t t-esc="item.winetype_id.name"/>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <t t-set="linecounter" t-value="linecounter+2"/>
+                                    <t t-set="current_winetype" t-value="item.winetype_id.name"/>
+                                </t>
+                                <t t-set="current_winetype" t-value="item.winetype_id.name"/>
+
+                                <!-- check if country-change -->
+                                <t t-if="(item.country_id.name!=current_country)">
+                                    <!-- new country -->
+                                    <!-- check if new page is needed -->
+                                    <t t-if="(linecounter &gt; page_change_country)">
+                                        <!-- no new page, just add space -->
+                                        <div style="page-break-before: always;"/>
+                                        <!-- yes, new page -->
+                                        <t t-set="linecounter" t-value="1"/>
+                                    </t>
+                                    <t t-if="(linecounter &lt;= page_change_country and linecounter!=1)">
+                                        <!-- no, no new page, just add some space -->
+                                        <table>
+                                            <tr>
+                                                <td height="20" colspan="5"></td>
+                                            </tr>
+                                        </table>
+                                        <t t-set="linecounter" t-value="linecounter+1"/>
+                                    </t>
+                                    <table>                                             <!-- write new country-name -->
+                                        <tr>
+                                            <td style="width:100%">
+                                                <span style="font-weight:bold;font-size:20px">
+                                                    <t t-esc="item.country_id.name"/>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <t t-set="linecounter" t-value="linecounter+2"/>
+                                    <t t-set="current_country" t-value="item.country_id.name"/>
+                                </t>
+
+                                <!-- check if region-change -->
+                                <t t-if="(item.region_id.name!=current_region)">
+                                    <!-- new region -->
+                                    <!-- check if new page is needed -->
+                                    <t t-if="(linecounter &gt; page_change_region)">
+                                        <!-- no new page, just add space -->
+                                        <div style="page-break-before: always;"/>
+                                        <!-- yes, new page -->
+                                        <t t-set="linecounter" t-value="1"/>
+                                    </t>
+                                    <t t-if="(linecounter &lt;= page_change_region and linecounter!=1)">
+                                        <!-- no, no new page, just add some space -->
+                                        <table>
+                                            <tr>
+                                                <td height="10" colspan="5"></td>
+                                            </tr>
+                                        </table>
+                                        <t t-set="linecounter" t-value="linecounter+1"/>
+                                    </t>
+                                    <table>                                             <!-- write new country-name -->
+                                        <tr>
+                                            <td style="width:100%">
+                                                <span style="font-weight:bold;font-size:14px">
+                                                    <t t-esc="item.region_id.name"/>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <t t-set="linecounter" t-value="linecounter+1"/>
+                                    <t t-set="current_region" t-value="item.region_id.name"/>
+                                </t>
+
+                                <!-- print wine-line -->
+                                <table style="text-align: left; width: 100%;font-size:12px" border="0" cellpadding="1"
+                                       cellspacing="0" padding="0"
+                                       margin="0">
+                                    <tr>
+                                        <td style="width:40%">
+                                            <span t-esc="item.name"/>
+                                        </td>
+                                        <td style="width:30%">
+                                            <span t-esc="item.producer_id.name"/>
+                                        </td>
+                                        <td style="width:5%">
+                                            <span t-esc="item.uom_id.name"/>
+                                        </td>
+                                        <td style="width:5%">
+                                            <span t-esc="item.vintage_year_id.year"/>
+                                        </td>
+
+                                        <!-- list with all prices -->
+                                        <t t-if="pricelist_id&lt;0">
+                                            <t t-if="pricelist_id==-2">
+                                                <!-- print cost only when all prices (-1) -->
+                                                <td style="width:5%;text-align:right">
+                                                    <span t-esc="'%.2f'% item.standard_price"/>
+                                                </td>
+                                            </t>
+
+                                            <td style="width:5%;text-align:right">
+                                                <span t-esc="'%.2f'% item.list_price"/>
+                                            </td>
+
+                                            <!-- print all prices from pricelists -->
+                                            <t t-foreach="item.pricelist_ids" t-as="pricelist_item">
+                                                <td style=" width:5%;text-align:right">
+                                                    <span t-esc="'%.2f'% pricelist_item.fixed_price"/>
+                                                </td>
+                                            </t>
+                                        </t>
+                                        <!-- specific price-list -->
+                                        <t t-if="pricelist_id>0">
+                                            <td style="width:5%;text-align:right">
+                                                <span t-esc="'%.2f'% item.with_context(pricelist=pricelist_id).price"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </table>
+                                <t t-set="linecounter" t-value="linecounter+1"/>
+                            </t>
+                        </t>
+                    </tbody>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

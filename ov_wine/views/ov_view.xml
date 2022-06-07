@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_product_form_wine" model="ir.ui.view">
+        <field name="name">wine_product_form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <!-- create a copy of the view
+        <field name="mode">primary</field> -->
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <!-- hide description -->
+            <xpath expr="//page[1]/group[2]" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <!-- add pricelist-tree -->
+            <xpath expr="//page[1]" position="inside">
+                <group name="general_attr">
+                    <field name="pricelist_ids">
+                        <tree string="Defined prices" editable="bottom">
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                            <field name="fixed_price"/>
+                            <field name="price_discount"/>
+                            <field name="pricelist_id"/>
+                            <field name="applied_on"/>
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+            <!-- module-attributes -->
+            <xpath expr="//page[1]" position="inside">
+                <group name="wine-attributes">
+                    <group name="left_panel">
+                        <field name="country_id" widget="selection"/>
+                        <field name="region_id" domain="[('country_id','=',country_id)]" widget="selection"/>
+                        <field name="city_id"/>
+                        <field name="producer_id"/>
+                        <field name="swk_city_id" widget="selection"/>
+                        <field name="product_nr"/>
+                        <field name="wine_tags" widget="many2many_tags"/>
+                    </group>
+                    <group name="right_panel">
+                        <!--                        <field name="uom_id" widget="selection"/>-->
+                        <field name="sustainabilitytype_id" widget="selection"/>
+                        <field name="wine_award" widget="char"/>
+                        <field name="winetype_id" widget="selection"/>
+                        <field name="vintage_year_id" widget="selection"/>
+                        <field name="grapes" widget="many2many_tags"/>
+                        <field name="best_drinking_age" widget="char"/>
+                        <field name="alcohol" string="alcohol % vol."/>
+                        <field name="serving_temp_id"/>
+                        <field name="wine_aging" widget="char"/>
+                        <field name="food_pairing" widget="many2many_tags"/>
+                    </group>
+                </group>
+                <group>
+                    <field name="description" widget="html"/>
+                    <field name="our_comment" widget="html"/>
+<!--                    <field name="memo" widget="html"/>
+                    <field name="slogan" string="Slogan" widget="html"/>-->
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!--modified Product tree view-->
+    <record id="my_view_products_tree" model="ir.ui.view">
+        <field name="name">my.view.products.tree</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="list_price" position="after">
+                <field name="winetype_id"/>
+                <field name="sustainabilitytype_id"/>
+                <field name="vintage_year_id"/>
+                <field name="uom_id"/>
+                <field name="country_id"/>
+                <field name="region_id" domain="[('country_id','=',country_id)]"/>
+                <field name="city_id"/>
+                <field name="producer_id"/>
+                <field name="swk_city_id"/>
+                <field name="product_nr"/>
+                <field name="uom_po_id"/>
+                <field name="grapes" widget="many2many_tags"/>
+                <field name="wine_tags" widget="many2many_tags"/>
+                <field name="storable_year_id"/>
+                <field name="alcohol"/>
+                <field name="serving_temp_id"/>
+                <field name="wine_aging"/>
+                <field name="food_pairing" widget="many2many_tags"/>
+                <field name="type"/>
+                <field name="categ_id"/>
+            </field>
+        </field>
+    </record>
+
+       <record id="inherit_product_template_search_view" model="ir.ui.view">
+        <field name="name">product.template.search</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+                <field name="name" position="replace">
+                   <field name="name" string="Product" filter_domain="['|', '|', '|', ('producer_id', 'ilike', self), ('city_id', 'ilike', self),('name', 'ilike', self), ('product_nr', 'ilike', self)]"/>
+<!--                    <field name="producer_id" string="Producer" filter_domain="[('producer_id','ilike',self)]"/>-->
+                </field>
+        </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="my_view_products_list_action">
+        <field name="name">Grid Edit Product</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="inherit_product_template_search_view"/>
+    </record>
+
+
+    <!-- Bottle size -->
+    <record model="ir.ui.view" id="bottle_size_form_view">
+        <field name="name">bottle_size.form</field>
+        <field name="model">uom.uom</field>
+        <field name="arch" type="xml">
+            <form string="Wine Bottle size Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="bottle_size_tree_view">
+        <field name="name">bottle_size.tree</field>
+        <field name="model">uom.uom</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="bottle_size_search_view">
+        <field name="name">bottle_size.search</field>
+        <field name="model">uom.uom</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="bottle_size_list_action">
+        <field name="name">WINE Bottle size</field>
+        <field name="res_model">uom.uom</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- Wine type -->
+    <record model="ir.ui.view" id="winetype_form_view">
+        <field name="name">winetype.form</field>
+        <field name="model">ov_wine.winetype</field>
+        <field name="arch" type="xml">
+            <form string="Wine Type Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="winetype_tree_view">
+        <field name="name">winetype.tree</field>
+        <field name="model">ov_wine.winetype</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="winetype_search_view">
+        <field name="name">winetype.search</field>
+        <field name="model">ov_wine.winetype</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="winetype_list_action">
+        <field name="name">WINE TYPES</field>
+        <field name="res_model">ov_wine.winetype</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+     <!-- Sustainability type -->
+    <record model="ir.ui.view" id="sustainabilitytype_form_view">
+        <field name="name">sustainabilitytype.form</field>
+        <field name="model">ov_wine.sustainabilitytype</field>
+        <field name="arch" type="xml">
+            <form string="Sustainability Type Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sustainabilitytype_tree_view">
+        <field name="name">sustainabilitytype.tree</field>
+        <field name="model">ov_wine.sustainabilitytype</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sustainabilitytype_search_view">
+        <field name="name">sustainabilitytype.search</field>
+        <field name="model">ov_wine.sustainabilitytype</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="sustainabilitytype_list_action">
+        <field name="name">SUSTAINABILITY TYPES</field>
+        <field name="res_model">ov_wine.sustainabilitytype</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Serving temp -->
+    <record model="ir.ui.view" id="serving_temp_form_view">
+        <field name="name">serving_temp.form</field>
+        <field name="model">ov_wine.serving_temp</field>
+        <field name="arch" type="xml">
+            <form string="Wine Serving temp. Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="serving_temp_tree_view">
+        <field name="name">serving_temp.tree</field>
+        <field name="model">ov_wine.serving_temp</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="serving_temp_search_view">
+        <field name="name">serving_temp.search</field>
+        <field name="model">ov_wine.serving_temp</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="serving_temp_list_action">
+        <field name="name">WINE SERVING TEMP</field>
+        <field name="res_model">ov_wine.serving_temp</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- Vintage Year -->
+    <record model="ir.ui.view" id="vintage_year_form_view">
+        <field name="name">vintage_year.form</field>
+        <field name="model">ov_wine.vintage_year</field>
+        <field name="arch" type="xml">
+            <form string="Wine Vintage Year Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="year"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vintage_year_tree_view">
+        <field name="name">vintage_year.tree</field>
+        <field name="model">ov_wine.vintage_year</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="year"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vintage_year_search_view">
+        <field name="name">vintage_year.search</field>
+        <field name="model">ov_wine.vintage_year</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="year"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vintage_year_list_action">
+        <field name="name">WINE VINTAGE YEAR</field>
+        <field name="res_model">ov_wine.vintage_year</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Storable Year -->
+    <record model="ir.ui.view" id="storable_year_form_view">
+        <field name="name">storable_year.form</field>
+        <field name="model">ov_wine.storable_year</field>
+        <field name="arch" type="xml">
+            <form string="Wine Vintage Year Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="year"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="storable_year_tree_view">
+        <field name="name">storable_year.tree</field>
+        <field name="model">ov_wine.storable_year</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="year"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="storable_year_search_view">
+        <field name="name">storable_year.search</field>
+        <field name="model">ov_wine.storable_year</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="year"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="storable_year_list_action">
+        <field name="name">WINE STORABLE YEAR</field>
+        <field name="res_model">ov_wine.storable_year</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Grape -->
+    <record model="ir.ui.view" id="grape_form_view">
+        <field name="name">grape.form</field>
+        <field name="model">ov_wine.grape</field>
+        <field name="arch" type="xml">
+            <form string="Wine Grape">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="grape_tree_view">
+        <field name="name">grape.tree</field>
+        <field name="model">ov_wine.grape</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="grape_search_view">
+        <field name="name">grape.search</field>
+        <field name="model">ov_wine.grape</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="grape_list_action">
+        <field name="name">WINE GRAPE</field>
+        <field name="res_model">ov_wine.grape</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- wine_tags -->
+    <record model="ir.ui.view" id="wine_tags_form_view">
+        <field name="name">wine_tags.form</field>
+        <field name="model">ov_wine.wine_tags</field>
+        <field name="arch" type="xml">
+            <form string="Name of the tag=">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="wine_tags_tree_view">
+        <field name="name">wine_tags.tree</field>
+        <field name="model">ov_wine.wine_tags</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="wine_tags_search_view">
+        <field name="name">wine_tags.search</field>
+        <field name="model">ov_wine.wine_tags</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="wine_tags_list_action">
+        <field name="name">WINE TAGS</field>
+        <field name="res_model">ov_wine.wine_tags</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!-- Producer -->
+    <record model="ir.ui.view" id="producer_form_view">
+        <field name="name">producer.form</field>
+        <field name="model">ov_wine.producer</field>
+        <field name="arch" type="xml">
+            <form string="Wine Producer Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                        <field name="address_id"/>
+                        <field name="description_html" string="Description" widget="html"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="producer_tree_view">
+        <field name="name">producer.tree</field>
+        <field name="model">ov_wine.producer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="producer_search_view">
+        <field name="name">producer.search</field>
+        <field name="model">ov_wine.producer</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="producer_list_action">
+        <field name="name">WINE PRODUCER</field>
+        <field name="res_model">ov_wine.producer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Country -->
+    <record model="ir.ui.view" id="country_form_view">
+        <field name="name">country.form</field>
+        <field name="model">ov_wine.country</field>
+        <field name="arch" type="xml">
+            <form string="Wine Country Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="country_tree_view">
+        <field name="name">country.tree</field>
+        <field name="model">ov_wine.country</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="country_search_view">
+        <field name="name">country.search</field>
+        <field name="model">ov_wine.country</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="country_list_action">
+        <field name="name">WINE COUNTRY</field>
+        <field name="res_model">ov_wine.country</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Region -->
+    <record model="ir.ui.view" id="region_form_view">
+        <field name="name">region.form</field>
+        <field name="model">ov_wine.region</field>
+        <field name="arch" type="xml">
+            <form string="Wine Region Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="country_id"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="region_tree_view">
+        <field name="name">region.tree</field>
+        <field name="model">ov_wine.region</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="country_id"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="region_search_view">
+        <field name="name">region.search</field>
+        <field name="model">ov_wine.region</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="region_list_action">
+        <field name="name">WINE REGION</field>
+        <field name="res_model">ov_wine.region</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- City -->
+    <record model="ir.ui.view" id="city_form_view">
+        <field name="name">city.form</field>
+        <field name="model">ov_wine.city</field>
+        <field name="arch" type="xml">
+            <form string="Wine City Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="city_tree_view">
+        <field name="name">city.tree</field>
+        <field name="model">ov_wine.city</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="city_search_view">
+        <field name="name">city.search</field>
+        <field name="model">ov_wine.city</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="city_list_action">
+        <field name="name">WINE CITY</field>
+        <field name="res_model">ov_wine.city</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- SWK Category -->
+    <record model="ir.ui.view" id="swk_category">
+        <field name="name">swk_category.form</field>
+        <field name="model">ov_wine.swk_category</field>
+        <field name="arch" type="xml">
+            <form string="SWK Wine Category Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="skw_category_tree_view">
+        <field name="name">swk_category.tree</field>
+        <field name="model">ov_wine.swk_category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="swk_category_search_view">
+        <field name="name">swk_category.search</field>
+        <field name="model">ov_wine.swk_category</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="swk_category_list_action">
+        <field name="name">SWK CATEGORY</field>
+        <field name="res_model">ov_wine.swk_category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- SWK Region -->
+    <record model="ir.ui.view" id="swk_region">
+        <field name="name">swk_region.form</field>
+        <field name="model">ov_wine.swk_region</field>
+        <field name="arch" type="xml">
+            <form string="SWK Wine Region Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                        <field name="category_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="skw_region_tree_view">
+        <field name="name">swk_region.tree</field>
+        <field name="model">ov_wine.swk_region</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+                <field name="category_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="swk_region_search_view">
+        <field name="name">swk_region.search</field>
+        <field name="model">ov_wine.swk_region</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="swk_region_list_action">
+        <field name="name">SWK REGION</field>
+        <field name="res_model">ov_wine.swk_region</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- SWK City -->
+    <record model="ir.ui.view" id="swk_city">
+        <field name="name">swk_city.form</field>
+        <field name="model">ov_wine.swk_city</field>
+        <field name="arch" type="xml">
+            <form string="SWK Wine City Form">
+                <sheet>
+                    <group>
+                        <field name="order"/>
+                        <field name="name"/>
+                        <field name="swk_region_id"/>
+                        <field name="swk_code"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="skw_city_tree_view">
+        <field name="name">swk_city.tree</field>
+        <field name="model">ov_wine.swk_city</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="name"/>
+                <field name="swk_region_id"/>
+                <field name="swk_code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="swk_city_search_view">
+        <field name="name">swk_city.search</field>
+        <field name="model">ov_wine.swk_city</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="swk_city_list_action">
+        <field name="name">SWK CITY</field>
+        <field name="res_model">ov_wine.swk_city</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
