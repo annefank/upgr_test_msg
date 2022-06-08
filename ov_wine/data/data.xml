@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+         <record model="ov_wine.grape" id="Barbera">
+            <field name="name">Barbera</field>
+            <field name="order">1</field>
+        </record>
+         <record model="ov_wine.grape" id="Merlot">
+            <field name="name">Merlot</field>
+            <field name="order">2</field>
+        </record>
+
+        <record model="ov_wine.winetype" id="Weisswein">
+            <field name="name">Weisswein</field>
+            <field name="order">1</field>
+        </record>
+        <record model="ov_wine.winetype" id="Rotwein">
+            <field name="name">Rotwein</field>
+            <field name="order">2</field>
+        </record>
+        <record model="ov_wine.winetype" id="Rosé">
+            <field name="name">Rosé</field>
+            <field name="order">3</field>
+        </record>
+        <record model="ov_wine.winetype" id="Schaumwein">
+            <field name="name">Schaumwein</field>
+            <field name="order">4</field>
+        </record>
+        <record model="ov_wine.winetype" id="Süsswein">
+            <field name="name">Süsswein</field>
+            <field name="order">5</field>
+        </record>
+        <record model="ov_wine.winetype" id="Andere">
+            <field name="name">Andere</field>
+            <field name="order">6</field>
+        </record>
+
+        <!-- countries -->
+        <record model="ov_wine.country" id="Schweiz">
+            <field name="name">Schweiz</field>
+            <field name="order">1</field>
+        </record>
+        <record model="ov_wine.country" id="Italien">
+            <field name="name">Italien</field>
+            <field name="order">2</field>
+        </record>
+        <record model="ov_wine.country" id="Spanien">
+            <field name="name">Spanien</field>
+            <field name="order">3</field>
+        </record>
+        <record model="ov_wine.country" id="Portugal">
+            <field name="name">Portugal</field>
+            <field name="order">4</field>
+        </record>
+        <record model="ov_wine.country" id="Österreich">
+            <field name="name">Österreich</field>
+            <field name="order">5</field>
+        </record>
+        <record model="ov_wine.country" id="Frankreich">
+            <field name="name">Frankreich</field>
+            <field name="order">6</field>
+        </record>
+        <record model="ov_wine.country" id="Deutschland">
+            <field name="name">Deutschland</field>
+            <field name="order">7</field>
+        </record>
+        <record model="ov_wine.country" id="Liechtenstein">
+            <field name="name">Liechtenstein</field>
+            <field name="order">8</field>
+        </record>
+        <record model="ov_wine.country" id="Südafrika">
+            <field name="name">Südafrika</field>
+            <field name="order">8</field>
+        </record>
+        <record model="ov_wine.country" id="Other">
+            <field name="name">Other</field>
+            <field name="order">9</field>
+        </record>
+
+        <!-- regions -->
+        <record model="ov_wine.region" id="Aargau">
+            <field name="name">Aargau</field>
+            <field name="order">1</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Bern">
+            <field name="name">Bern</field>
+            <field name="order">2</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Bielersee">
+            <field name="name">Bielersee</field>
+            <field name="order">3</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Bündner_Herrschaft">
+            <field name="name">Bündner Herrschaft</field>
+            <field name="order">4</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Freiburg">
+            <field name="name">Freiburg</field>
+            <field name="order">5</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Genf">
+            <field name="name">Genf</field>
+            <field name="order">6</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Jura">
+            <field name="name">Jura</field>
+            <field name="order">7</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Luzern">
+            <field name="name">Luzern</field>
+            <field name="order">8</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Neuenburg">
+            <field name="name">Neuenburg</field>
+            <field name="order">9</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Schaffhausen">
+            <field name="name">Schaffhausen</field>
+            <field name="order">10</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Thunersee">
+            <field name="name">Thunersee</field>
+            <field name="order">11</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Waadt">
+            <field name="name">Waadt</field>
+            <field name="order">12</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Wallis">
+            <field name="name">Wallis</field>
+            <field name="order">13</field>
+            <field name="country_id">1</field>
+        </record>
+        <record model="ov_wine.region" id="Zürich">
+            <field name="name">Zürich</field>
+            <field name="order">14</field>
+            <field name="country_id">1</field>
+        </record>
+
+        <record model="ov_wine.region" id="Abruzzen">
+            <field name="name">Abruzzen</field>
+            <field name="order">15</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Apulien">
+            <field name="name">Apulien</field>
+            <field name="order">16</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Basilikata">
+            <field name="name">Basilikata</field>
+            <field name="order">17</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Emilia-Romagna">
+            <field name="name">Emilia-Romagna</field>
+            <field name="order">18</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Friaul-Julisch_Venetien">
+            <field name="name">Friaul-Julisch Venetien</field>
+            <field name="order">19</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Kampanien">
+            <field name="name">Kampanien</field>
+            <field name="order">20</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Ligurien">
+            <field name="name">Ligurien</field>
+            <field name="order">21</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Lombardei">
+            <field name="name">Lombardei</field>
+            <field name="order">22</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Marken">
+            <field name="name">Marken</field>
+            <field name="order">23</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Piemont">
+            <field name="name">Piemont</field>
+            <field name="order">24</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Sardinien">
+            <field name="name">Sardinien</field>
+            <field name="order">25</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Sizilien">
+            <field name="name">Sizilien</field>
+            <field name="order">26</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Südtirol">
+            <field name="name">Südtirol</field>
+            <field name="order">27</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Toskana">
+            <field name="name">Toskana</field>
+            <field name="order">28</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Trentino">
+            <field name="name">Trentino</field>
+            <field name="order">29</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Umbrien">
+            <field name="name">Umbrien</field>
+            <field name="order">30</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Venetien">
+            <field name="name">Venetien</field>
+            <field name="order">31</field>
+            <field name="country_id">2</field>
+        </record>
+        <record model="ov_wine.region" id="Andalusien">
+            <field name="name">Andalusien</field>
+            <field name="order">32</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Asturien">
+            <field name="name">Asturien</field>
+            <field name="order">33</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Aragonien">
+            <field name="name">Aragonien</field>
+            <field name="order">34</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Balearen">
+            <field name="name">Balearen</field>
+            <field name="order">35</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Baskenland">
+            <field name="name">Baskenland</field>
+            <field name="order">36</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Kanarische_Inseln">
+            <field name="name">Kanarische Inseln</field>
+            <field name="order">37</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Kantabrien">
+            <field name="name">Kantabrien</field>
+            <field name="order">38</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Kastilien-La_Mancha">
+            <field name="name">Kastilien-La Mancha</field>
+            <field name="order">39</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Kastilien_und_León">
+            <field name="name">Kastilien und León</field>
+            <field name="order">40</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Katalonien">
+            <field name="name">Katalonien</field>
+            <field name="order">41</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Extremadura">
+            <field name="name">Extremadura</field>
+            <field name="order">42</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Galicien">
+            <field name="name">Galicien</field>
+            <field name="order">43</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="La_Rioja">
+            <field name="name">La Rioja</field>
+            <field name="order">44</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Autonome_Gemeinschaft_Madrid">
+            <field name="name">Autonome Gemeinschaft Madrid</field>
+            <field name="order">45</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Murcia">
+            <field name="name">Murcia</field>
+            <field name="order">46</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Navarra">
+            <field name="name">Navarra</field>
+            <field name="order">47</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Valencia">
+            <field name="name">Valencia</field>
+            <field name="order">48</field>
+            <field name="country_id">3</field>
+        </record>
+        <record model="ov_wine.region" id="Alentejo">
+            <field name="name">Alentejo</field>
+            <field name="order">49</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Azoren">
+            <field name="name">Azoren</field>
+            <field name="order">50</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Bairrada">
+            <field name="name">Bairrada</field>
+            <field name="order">51</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Dão">
+            <field name="name">Dão</field>
+            <field name="order">52</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Douro">
+            <field name="name">Douro</field>
+            <field name="order">53</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Estremadura">
+            <field name="name">Estremadura</field>
+            <field name="order">54</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Madeira">
+            <field name="name">Madeira</field>
+            <field name="order">55</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Tejo">
+            <field name="name">Tejo</field>
+            <field name="order">56</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Terras_do_Sando">
+            <field name="name">Terras do Sando</field>
+            <field name="order">57</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Vinho_Verde">
+            <field name="name">Vinho Verde</field>
+            <field name="order">58</field>
+            <field name="country_id">4</field>
+        </record>
+        <record model="ov_wine.region" id="Wachau">
+            <field name="name">Wachau</field>
+            <field name="order">59</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Kremstal">
+            <field name="name">Kremstal</field>
+            <field name="order">60</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Kamptal">
+            <field name="name">Kamptal</field>
+            <field name="order">61</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Traisental">
+            <field name="name">Traisental</field>
+            <field name="order">62</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Wagram">
+            <field name="name">Wagram</field>
+            <field name="order">63</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Weinviertel">
+            <field name="name">Weinviertel</field>
+            <field name="order">64</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Carnutum">
+            <field name="name">Carnutum</field>
+            <field name="order">65</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Thermenregion">
+            <field name="name">Thermenregion</field>
+            <field name="order">66</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Neusiedlersee">
+            <field name="name">Neusiedlersee</field>
+            <field name="order">67</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Leithaberg">
+            <field name="name">Leithaberg</field>
+            <field name="order">68</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Rosalia">
+            <field name="name">Rosalia</field>
+            <field name="order">69</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Mittelburgenland">
+            <field name="name">Mittelburgenland</field>
+            <field name="order">70</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Eisenberg">
+            <field name="name">Eisenberg</field>
+            <field name="order">71</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Wien">
+            <field name="name">Wien</field>
+            <field name="order">72</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Vulkanland_Steiermark">
+            <field name="name">Vulkanland Steiermark</field>
+            <field name="order">73</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Südsteiermark">
+            <field name="name">Südsteiermark</field>
+            <field name="order">74</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Weststeiermark">
+            <field name="name">Weststeiermark</field>
+            <field name="order">75</field>
+            <field name="country_id">5</field>
+        </record>
+        <record model="ov_wine.region" id="Ahr">
+            <field name="name">Ahr</field>
+            <field name="order">76</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Baden">
+            <field name="name">Baden</field>
+            <field name="order">77</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Franken">
+            <field name="name">Franken</field>
+            <field name="order">78</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Hessische_Bergstrasse">
+            <field name="name">Hessische Bergstrasse</field>
+            <field name="order">79</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Mittelrhein">
+            <field name="name">Mittelrhein</field>
+            <field name="order">80</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Mosel">
+            <field name="name">Mosel</field>
+            <field name="order">81</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Nahe">
+            <field name="name">Nahe</field>
+            <field name="order">82</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Pfalz">
+            <field name="name">Pfalz</field>
+            <field name="order">83</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Rheingau">
+            <field name="name">Rheingau</field>
+            <field name="order">84</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Rheinhessen">
+            <field name="name">Rheinhessen</field>
+            <field name="order">85</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Saale-Unstrut">
+            <field name="name">Saale-Unstrut</field>
+            <field name="order">86</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Sachsen">
+            <field name="name">Sachsen</field>
+            <field name="order">87</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Württemberg">
+            <field name="name">Württemberg</field>
+            <field name="order">88</field>
+            <field name="country_id">7</field>
+        </record>
+        <record model="ov_wine.region" id="Beaujolais">
+            <field name="name">Beaujolais</field>
+            <field name="order">89</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Bordeaus">
+            <field name="name">Bordeaus</field>
+            <field name="order">90</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Burgund">
+            <field name="name">Burgund</field>
+            <field name="order">91</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Champagne">
+            <field name="name">Champagne</field>
+            <field name="order">92</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Elsass">
+            <field name="name">Elsass</field>
+            <field name="order">93</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Jura_FR">
+            <field name="name">Jura_FR</field>
+            <field name="order">94</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Korsika">
+            <field name="name">Korsika</field>
+            <field name="order">95</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Languedoc-Rooussillon">
+            <field name="name">Languedoc-Rooussillon</field>
+            <field name="order">96</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Loire">
+            <field name="name">Loire</field>
+            <field name="order">97</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Lothringen">
+            <field name="name">Lothringen</field>
+            <field name="order">98</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Provence">
+            <field name="name">Provence</field>
+            <field name="order">99</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Rhône">
+            <field name="name">Rhône</field>
+            <field name="order">100</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Savoyen">
+            <field name="name">Savoyen</field>
+            <field name="order">101</field>
+            <field name="country_id">6</field>
+        </record>
+        <record model="ov_wine.region" id="Südwesten">
+            <field name="name">Südwesten</field>
+            <field name="order">102</field>
+            <field name="country_id">6</field>
+        </record>
+        <!-- cities -->
+
+        <!-- SWK Kat -->
+        <record model="ov_wine.swk_category" id="Kategorie_I">
+            <field name="name">Kategorie I</field>
+            <field name="order">1</field>
+        </record>
+        <record model="ov_wine.swk_category" id="Kategorie_II">
+            <field name="name">Kategorie II</field>
+            <field name="order">2</field>
+        </record>
+        <record model="ov_wine.swk_category" id="Kategorie_III_(In-_und_Ausland)">
+            <field name="name">Kategorie III (In- und Ausland)</field>
+            <field name="order">3</field>
+        </record>
+
+        <!-- SWK Region -->
+        <record model="ov_wine.swk_region" id="Westschweizer">
+            <field name="name">Westschweizer</field>
+            <field name="order">1</field>
+            <field name="category_id">1</field>
+        </record>
+        <record model="ov_wine.swk_region" id="Ostschweizer">
+            <field name="name">Ostschweizer</field>
+            <field name="order">2</field>
+            <field name="category_id">1</field>
+        </record>
+        <record model="ov_wine.swk_region" id="Landwein">
+            <field name="name">Landwein</field>
+            <field name="order">3</field>
+            <field name="category_id">2</field>
+        </record>
+        <record model="ov_wine.swk_region" id="Ausländische">
+            <field name="name">Ausländische</field>
+            <field name="order">4</field>
+            <field name="category_id">3</field>
+        </record>
+        <record model="ov_wine.swk_region" id="Alkoholfreier_Traubensaft_(In-_und_Ausland)">
+            <field name="name">Alkoholfreier Traubensaft (In- und Ausland)</field>
+            <field name="order">5</field>
+            <field name="category_id">3</field>
+        </record>
+
+        <!-- SWK City -->
+        <record model="ov_wine.swk_city" id="SWK_Waadt">
+            <field name="name">Waadt</field>
+            <field name="order">1</field>
+            <field name="swk_region_id">1</field>
+            <field name="swk_code">111</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Wallis">
+            <field name="name">Wallis</field>
+            <field name="order">2</field>
+            <field name="swk_region_id">1</field>
+            <field name="swk_code">112</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Neuenburg">
+            <field name="name">Neuenburg</field>
+            <field name="order">3</field>
+            <field name="swk_region_id">1</field>
+            <field name="swk_code">113</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Genf">
+            <field name="name">Genf</field>
+            <field name="order">4</field>
+            <field name="swk_region_id">1</field>
+            <field name="swk_code">114</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Freiburg">
+            <field name="name">Freiburg</field>
+            <field name="order">5</field>
+            <field name="swk_region_id">1</field>
+            <field name="swk_code">115</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Bielersee">
+            <field name="name">Bielersee</field>
+            <field name="order">6</field>
+            <field name="swk_region_id">1</field>
+            <field name="swk_code">116</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Jura">
+            <field name="name">Jura</field>
+            <field name="order">7</field>
+            <field name="swk_region_id">1</field>
+            <field name="swk_code">117</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Zürich">
+            <field name="name">Zürich</field>
+            <field name="order">8</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">121</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Basel-Land">
+            <field name="name">Basel-Land</field>
+            <field name="order">9</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">122</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Schaffhausen">
+            <field name="name">Schaffhausen</field>
+            <field name="order">10</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">123</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_St_Gallen">
+            <field name="name">St. Gallen</field>
+            <field name="order">11</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">124</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Graubünden">
+            <field name="name">Graubünden</field>
+            <field name="order">12</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">125</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Aargau">
+            <field name="name">Aargau</field>
+            <field name="order">13</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">126</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Thurgau">
+            <field name="name">Thurgau</field>
+            <field name="order">14</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">127</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Tessin">
+            <field name="name">Tessin</field>
+            <field name="order">15</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">130</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_andere_Kantone">
+            <field name="name">andere Kantone</field>
+            <field name="order">16</field>
+            <field name="swk_region_id">2</field>
+            <field name="swk_code">128</field>
+        </record>
+
+        <record model="ov_wine.swk_city" id="SWK_Westschweizer">
+            <field name="name">Westschweizer</field>
+            <field name="order">17</field>
+            <field name="swk_region_id">3</field>
+            <field name="swk_code">210</field>
+        </record>
+
+        <record model="ov_wine.swk_city" id="SWK_Ostschweizer">
+            <field name="name">Ostschweizer</field>
+            <field name="order">18</field>
+            <field name="swk_region_id">3</field>
+            <field name="swk_code">220</field>
+        </record>
+
+        <record model="ov_wine.swk_city" id="SWK_Italienische_Schweiz">
+            <field name="name">Italienische Schweiz</field>
+            <field name="order">19</field>
+            <field name="swk_region_id">3</field>
+            <field name="swk_code">230</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Schweizer_Wein">
+            <field name="name">Schweizer Wein</field>
+            <field name="order">20</field>
+            <field name="swk_region_id">3</field>
+            <field name="swk_code">201</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Argentinien">
+            <field name="name">Argentinien</field>
+            <field name="order">21</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">401</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Australien">
+            <field name="name">Australien</field>
+            <field name="order">22</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">402</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Chile">
+            <field name="name">Chile</field>
+            <field name="order">23</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">403</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Frankreich">
+            <field name="name">Frankreich</field>
+            <field name="order">24</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">404</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Italien">
+            <field name="name">Italien</field>
+            <field name="order">25</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">405</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Portugal">
+            <field name="name">Portugal</field>
+            <field name="order">26</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">406</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Spanien">
+            <field name="name">Spanien</field>
+            <field name="order">27</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">407</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Südafrika">
+            <field name="name">Südafrika</field>
+            <field name="order">28</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">408</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_USA">
+            <field name="name">USA</field>
+            <field name="order">29</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">409</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_andere_Länder">
+            <field name="name">andere Länder</field>
+            <field name="order">30</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">410</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Weiss">
+            <field name="name">Weiss</field>
+            <field name="order">31</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">51</field>
+        </record>
+        <record model="ov_wine.swk_city" id="SWK_Rot">
+            <field name="name">Rot</field>
+            <field name="order">32</field>
+            <field name="swk_region_id">4</field>
+            <field name="swk_code">52</field>
+        </record>
+
+        <!-- Vintage-year -->
+        <record model="ov_wine.vintage_year" id="2021">
+            <field name="year">2021</field>
+            <field name="order">2021</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2020">
+            <field name="year">2020</field>
+            <field name="order">2020</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2019">
+            <field name="year">2019</field>
+            <field name="order">2019</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2018">
+            <field name="year">2018</field>
+            <field name="order">2018</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2017">
+            <field name="year">2017</field>
+            <field name="order">2017</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2016">
+            <field name="year">2016</field>
+            <field name="order">2016</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2015">
+            <field name="year">2015</field>
+            <field name="order">2015</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2014">
+            <field name="year">2014</field>
+            <field name="order">2014</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2013">
+            <field name="year">2013</field>
+            <field name="order">2013</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2012">
+            <field name="year">2012</field>
+            <field name="order">2012</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2011">
+            <field name="year">2011</field>
+            <field name="order">2011</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2010">
+            <field name="year">2010</field>
+            <field name="order">2010</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2009">
+            <field name="year">2009</field>
+            <field name="order">2009</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2008">
+            <field name="year">2008</field>
+            <field name="order">2008</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2007">
+            <field name="year">2007</field>
+            <field name="order">2007</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2006">
+            <field name="year">2006</field>
+            <field name="order">2006</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2005">
+            <field name="year">2005</field>
+            <field name="order">2005</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2004">
+            <field name="year">2004</field>
+            <field name="order">2004</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2003">
+            <field name="year">2003</field>
+            <field name="order">2003</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2002">
+            <field name="year">2002</field>
+            <field name="order">2002</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2001">
+            <field name="year">2001</field>
+            <field name="order">2001</field>
+        </record>
+        <record model="ov_wine.vintage_year" id="2000">
+            <field name="year">2000</field>
+            <field name="order">2000</field>
+        </record>
+
+         <record model="ov_wine.storable_year" id="2031">
+            <field name="year">2031</field>
+            <field name="order">2031</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2030">
+            <field name="year">2030</field>
+            <field name="order">2030</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2029">
+            <field name="year">2029</field>
+            <field name="order">2029</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2028">
+            <field name="year">2028</field>
+            <field name="order">2028</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2027">
+            <field name="year">2027</field>
+            <field name="order">2027</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2026">
+            <field name="year">2026</field>
+            <field name="order">2026</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2025">
+            <field name="year">2025</field>
+            <field name="order">2025</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2024">
+            <field name="year">2024</field>
+            <field name="order">2024</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2023">
+            <field name="year">2023</field>
+            <field name="order">2023</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2022">
+            <field name="year">2022</field>
+            <field name="order">2022</field>
+        </record>
+         <record model="ov_wine.storable_year" id="2021">
+            <field name="year">2021</field>
+            <field name="order">2021</field>
+        </record>
+
+         <record model="ov_wine.serving_temp" id="15-18">
+            <field name="name">15-18°C</field>
+            <field name="order">1</field>
+        </record>
+     <record model="ov_wine.serving_temp" id="12-15">
+            <field name="name">12-15°C</field>
+            <field name="order">2</field>
+        </record>
+             <record model="ov_wine.serving_temp" id="10-13">
+            <field name="name">10-13°C</field>
+            <field name="order">3</field>
+        </record>
+             <record model="ov_wine.serving_temp" id="6-10">
+            <field name="name">6-10°C</field>
+            <field name="order">4</field>
+        </record>
+             <record model="ov_wine.serving_temp" id="6-8">
+            <field name="name">6-8°C</field>
+            <field name="order">5</field>
+        </record>
+
+        <record id="20_cl" model="uom.uom">
+            <field name="name">20 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">0.2</field>
+            <field name="uom_type">smaller</field>
+            <field name="order">1</field>
+        </record>
+        <record id="33_cl" model="uom.uom">
+            <field name="name">33 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">0.33</field>
+            <field name="uom_type">smaller</field>
+            <field name="order">2</field>
+        </record>
+        <record id="35_cl" model="uom.uom">
+            <field name="name">35 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">0.35</field>
+            <field name="uom_type">smaller</field>
+            <field name="order">3</field>
+        </record>
+        <record id="375_cl" model="uom.uom">
+            <field name="name">37.5 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">0.375</field>
+            <field name="uom_type">smaller</field>
+            <field name="order">4</field>
+        </record>
+        <record id="50_cl" model="uom.uom">
+            <field name="name">50 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">0.50</field>
+            <field name="uom_type">smaller</field>
+            <field name="order">5</field>
+        </record>
+        <record id="70_cl" model="uom.uom">
+            <field name="name">70 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">0.70</field>
+            <field name="uom_type">smaller</field>
+            <field name="order">6</field>
+        </record>
+        <record id="75_cl" model="uom.uom">
+            <field name="name">75 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">0.75</field>
+            <field name="uom_type">smaller</field>
+            <field name="order">7</field>
+        </record>
+        <record id="150_cl" model="uom.uom">
+            <field name="name">150 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">1.5</field>
+            <field name="uom_type">bigger</field>
+            <field name="order">8</field>
+        </record>
+        <record id="300_cl" model="uom.uom">
+            <field name="name">300 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">3</field>
+            <field name="uom_type">bigger</field>
+            <field name="order">9</field>
+        </record>
+        <record id="500_cl" model="uom.uom">
+            <field name="name">500 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">5</field>
+            <field name="uom_type">bigger</field>
+            <field name="order">10</field>
+        </record>
+        <record id="600_cl" model="uom.uom">
+            <field name="name">600 cl</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">6</field>
+            <field name="uom_type">bigger</field>
+            <field name="order">11</field>
+        </record>
+        <record id="1" model="uom.uom">
+            <field name="name">1</field>
+            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+            <field name="factor">1</field>
+            <field name="uom_type">bigger</field>
+            <field name="order">12</field>
+        </record>
+
+        <!-- Company -->
+       
+
+    </data>
+</odoo>

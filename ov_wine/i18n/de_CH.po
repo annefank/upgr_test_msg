@@ -1,0 +1,1154 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ov_wine
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-21 14:14+0000\n"
+"PO-Revision-Date: 2021-04-21 14:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "110 Westschweizer"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "120 Ostschweizer"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "130 Tessin"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.150_cl
+msgid "150 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.20_cl
+msgid "20 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.300_cl
+msgid "300 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.33_cl
+msgid "33 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.35_cl
+msgid "35 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.375_cl
+msgid "37.5 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.50_cl
+msgid "50 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.500_cl
+msgid "500 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.600_cl
+msgid "600 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.70_cl
+msgid "70 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model:uom.uom,name:ov_wine.75_cl
+msgid "75 cl"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "8803 Rüschlikon"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "<b>10 Klasse AOC</b>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "<b>20 Klasse Landwein</b>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "<b>30 Klasse Wein/Tafelwein</b>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "<b>40 Ausländische Weine</b>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "<b>50 Traubensaft</b>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.mv_rechnung
+msgid "<span>Taxes</span>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.mv_auftrag
+#: model_terms:ir.ui.view,arch_db:ov_wine.mv_rechnung
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Alkohol % vol:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Ausbau:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Hersteller:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "<strong>Inländische Weine</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Jahrgang:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Lagerfähig bis:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Land:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Passt zu:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Region:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Servier-Temperatur:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Traubensorten:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.ov_wine_attributes
+msgid "<strong>Weinart:</strong>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Aargau"
+msgstr ""
+
+#. module: ov_wine
+#: model:res.groups,comment:ov_wine.group_ov_wine_manager
+msgid "Admin user"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__wine_aging
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__wine_aging
+msgid "Aging"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__alcohol
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__alcohol
+msgid "Alcohol"
+msgstr "Alkohol"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_detail_template
+msgid "Anzahl"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Argentinien"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Australien"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.report,name:ov_wine.action_winelist_b2b_report
+msgid "B2B Preisliste"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Basel-Land"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Bielersee"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "CSCV-SWK"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.report,name:ov_wine.swk_report_template_detail_report
+msgid "CSCV-SWK Detail Inventar Formular A"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.report,name:ov_wine.swk_report_template_report
+msgid "CSCV-SWK Inventar Formular A"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__category_id
+msgid "Category"
+msgstr "Kategorie"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Chile"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__name
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__city_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__city_id
+msgid "City"
+msgstr "Ort"
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_city__name
+msgid "City of Wine-origin"
+msgstr "Ort Herkunft"
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_winetype__name
+msgid "Common Types of Wine (red, white,..)"
+msgstr "Weinart (Rotwein, Weisswein,..."
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__country_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__country_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__country_id
+msgid "Country"
+msgstr "Land"
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_country__name
+msgid "Country of origin (Switzerland, France, Italy, ..)"
+msgstr "Herkunftsland"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__create_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__create_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.view_product_form_wine
+msgid "Defined prices"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__description
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__description
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__description
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__description
+#: model_terms:ir.ui.view,arch_db:ov_wine.producer_form_view
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__display_name
+#: model:ir.model.fields,field_description:ov_wine.field_uom_uom__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: ov_wine
+#: model:ir.actions.report,name:ov_wine.action_winelist_b2c_report
+msgid "Endkunden Preisliste"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_detail_template
+msgid "Flaschengrösse"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__name
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__food_pairing
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__food_pairing
+msgid "Food"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid ""
+"Formular A\n"
+"                        <span class=\"h2\">Betriebs-Nr.:</span>\n"
+"                        <span class=\"s6\">__________</span>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Frankreich"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Freiburg"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Genf"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__name
+msgid "Grape"
+msgstr "Traubensorte"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__grapes
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__grapes
+msgid "Grapes"
+msgstr "Traubensorten"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Graubünden"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.my_view_products_list_action
+msgid "Grid Edit Product"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__id
+#: model:ir.model.fields,field_description:ov_wine.field_uom_uom__id
+msgid "ID"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "In- und Ausland"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid ""
+"Inventar\n"
+"                                    <span class=\"s4\">per 31. Dezember 20 _ _</span>"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Italien"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Italienische Schweiz"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Jura"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_product_template____last_update
+#: model:ir.model.fields,field_description:ov_wine.field_uom_uom____last_update
+msgid "Last Modified on"
+msgstr "Letzte Änderung am"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__write_uid
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__write_uid
+msgid "Last Updated by"
+msgstr "Letzte Änderung durch"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__write_date
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__write_date
+msgid "Last Updated on"
+msgstr "Letzter Speicherung am"
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_product_product__wine_aging
+#: model:ir.model.fields,help:ov_wine.field_product_template__wine_aging
+msgid "Making of wine"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_detail_template
+msgid "Name"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_food__name
+msgid "Name of the food)"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_grape__name
+msgid "Name of the grape - (Barbera, Cabernet Sauvignon,...)"
+msgstr "Name der Traubensorte (Barbera, Cabernet Saubignon,...)"
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_producer__name
+msgid "Name of the producer to be shown in the shop"
+msgstr "Name des Herstellers, der im Shop angezeigt werden soll"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Neuenburg"
+msgstr ""
+
+#. module: ov_wine
+#: model:res.groups,comment:ov_wine.group_ov_wine_user
+msgid "Normal user"
+msgstr "Anwender"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_country__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_food__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_grape__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__order
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__order
+#: model:ir.model.fields,field_description:ov_wine.field_uom_uom__order
+msgid "Order"
+msgstr "Sortierung"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.ov_wine_menu_orders
+msgid "Order_Processing"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.ov_wine_orders
+msgid "Orders"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.origin
+msgid "Origin"
+msgstr "Herkunft"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Ostschweizer"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__our_comment
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__our_comment
+msgid "Our comment"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Portugal"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Postfach 272"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.report,name:ov_wine.action_winelist_allprices_report
+msgid "Preisliste Alle Preise"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__pricelist_ids
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__pricelist_ids
+msgid "Prices"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__name
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__producer_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__producer_id
+msgid "Producer"
+msgstr "Hersteller"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.ov_wine_menu_product
+#: model:ir.ui.menu,name:ov_wine.ov_wine_product
+#: model_terms:ir.ui.view,arch_db:ov_wine.inherit_product_template_search_view
+msgid "Product"
+msgstr "Produkt"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__product_nr
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__product_nr
+msgid "Product Nr."
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_product_template
+msgid "Product Template"
+msgstr "Produktvorlage"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "Produkteinheit"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.ov_wine_quotations
+msgid "Quotations"
+msgstr "Angebote"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_city__region_id
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_region__name
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__region_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__region_id
+msgid "Region"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_region__name
+msgid "Region of Wine (Piedmont, Tuscany, Sicily,..)"
+msgstr "Weinregion (Piemont, Toskana, Sizielien,...)"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__swk_city_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__swk_city_id
+#: model:ir.ui.menu,name:ov_wine.ov_wine_menu_swk
+msgid "SWK"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.swk_category_list_action
+msgid "SWK CATEGORY"
+msgstr "SWK Kategorie"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.swk_city_list_action
+msgid "SWK CITY"
+msgstr "SWK Ort"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_category__name
+#: model:ir.ui.menu,name:ov_wine.swk_cat
+msgid "SWK Category"
+msgstr "SWK Kategorie"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__name
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_swk_city__name
+#: model:ir.ui.menu,name:ov_wine.swk_city
+msgid "SWK City"
+msgstr "SWK Ort"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_detail_template
+msgid "SWK ID"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.swk_region_list_action
+msgid "SWK REGION"
+msgstr "SWK Region"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_region__name
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_swk_region__name
+#: model:ir.ui.menu,name:ov_wine.swk_region
+msgid "SWK Region"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__swk_region_id
+msgid "SWK Region ID"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,help:ov_wine.field_ov_wine_swk_category__name
+msgid "SWK Top Level Category"
+msgstr "SWK Kategorie"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_category
+msgid "SWK Wine Category Form"
+msgstr "SWK Wein Kategorie"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Schaffhausen"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Schaumwein"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Schweizer Wein"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Schweizer Weinhandelskontrolle"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Seite"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__serving_temp_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__serving_temp_id
+msgid "Serving temp"
+msgstr "Serviertemperatur"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_serving_temp__name
+msgid "Serving temp."
+msgstr "Serviertemperatur"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.ov_wine_settings
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Spanien"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "St. Gallen"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__storable_year_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__storable_year_id
+msgid "Storable Year"
+msgstr "Lagerfähig bis"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_storable_year__year
+msgid "Storable_Year"
+msgstr "Lagerfähig bis"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_swk_city__swk_code
+msgid "Swk Code"
+msgstr "SWK Code"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Südafrika"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Tessin"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Thurgau"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_detail_template
+msgid "Total l"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_winetype__name
+msgid "Type"
+msgstr "Art"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "USA"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Version"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__vintage_year_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__vintage_year_id
+msgid "Vintage Year"
+msgstr "Wein Jahrgang"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_vintage_year__year
+msgid "Vintage_Year"
+msgstr "Wein Jahrgang"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.bottle_size_list_action
+msgid "WINE Bottle size"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.city_list_action
+msgid "WINE CITY"
+msgstr "WEIN ORT"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.country_list_action
+msgid "WINE COUNTRY"
+msgstr "WEIN LAND"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.grape_list_action
+msgid "WINE GRAPE"
+msgstr "WEIN Traubensorte"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.producer_list_action
+msgid "WINE PRODUCER"
+msgstr "WEIN Hersteller"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.region_list_action
+msgid "WINE REGION"
+msgstr "WEINN REGION"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.serving_temp_list_action
+msgid "WINE SERVING TEMP"
+msgstr "WEIN Serviertemperatur"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.storable_year_list_action
+msgid "WINE STORABLE YEAR"
+msgstr "WEIN Lagerfähig bis"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.winetype_list_action
+msgid "WINE TYPES"
+msgstr "WEINART"
+
+#. module: ov_wine
+#: model:ir.actions.act_window,name:ov_wine.vintage_year_list_action
+msgid "WINE VINTAGE YEAR"
+msgstr "WEIN Jahrgang"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Waadt"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Wallis"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Weinbestände gemäss detailliertem Inventar"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_detail_template
+msgid "Weintype"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Westschweizer"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.ov_wine
+msgid "Wine Attributes"
+msgstr "WEIN Attribute"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.bottle_size_form_view
+msgid "Wine Bottle size Form"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.city_form_view
+msgid "Wine City Form"
+msgstr "Wein Ort Formular"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.country_form_view
+msgid "Wine Country Form"
+msgstr "Wein Land Formular"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.producer_form_view
+msgid "Wine Producer Form"
+msgstr "Wein Hersteller Formular"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.region_form_view
+msgid "Wine Region Form"
+msgstr "Wein Region Formular"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.serving_temp_form_view
+msgid "Wine Serving temp. Form"
+msgstr "Wein Serviertemperatur Formular"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_winetype
+msgid "Wine Type"
+msgstr "Wein Art"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.winetype_form_view
+msgid "Wine Type Form"
+msgstr "Wein Art Formular"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.grape_form_view
+#: model_terms:ir.ui.view,arch_db:ov_wine.storable_year_form_view
+#: model_terms:ir.ui.view,arch_db:ov_wine.vintage_year_form_view
+msgid "Wine Vintage Year Form"
+msgstr "Wein Jahrgang Formular"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_product_product__winetype_id
+#: model:ir.model.fields,field_description:ov_wine.field_product_template__winetype_id
+msgid "Winetype"
+msgstr "Weinart"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "Zürich"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__address_id
+msgid "address"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.view_product_form_wine
+msgid "alcohol % vol."
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "andere"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "andere Kantone"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "andere Länder"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.bottle_size
+msgid "bottle_size"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.city_menu
+msgid "city"
+msgstr "Ort"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_city
+msgid "city names"
+msgstr "Ort Namen"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.country_menu
+msgid "country"
+msgstr "Land"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_country
+msgid "country names"
+msgstr "Land Namen"
+
+#. module: ov_wine
+#: model:ir.model.fields,field_description:ov_wine.field_ov_wine_producer__description_html
+msgid "description_html"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_food
+msgid "food name"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.grape_menu
+msgid "grape"
+msgstr "Traubensorten"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_grape
+msgid "grape name"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.module.category,name:ov_wine.module_ov_wine
+#: model:ir.ui.menu,name:ov_wine.main_ov_wine_menu
+msgid "ov wine"
+msgstr ""
+
+#. module: ov_wine
+#: model:res.groups,name:ov_wine.group_ov_wine_manager
+msgid "ov_wine admin"
+msgstr "ov wine admin"
+
+#. module: ov_wine
+#: model:res.groups,name:ov_wine.group_ov_wine_user
+msgid "ov_wine user"
+msgstr "ov wine user"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.producer_menu
+msgid "producer"
+msgstr "Erzeuger"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.region_menu
+msgid "region"
+msgstr "Region"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_region
+msgid "region names"
+msgstr "Region Namen"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "rosé"
+msgstr ""
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "rot"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_serving_temp
+msgid "serving temp"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.serving_temp
+msgid "serving_temp"
+msgstr "Serviertemperatur"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_storable_year
+#: model:ir.ui.menu,name:ov_wine.storable_year_menu
+msgid "storable year"
+msgstr "Lagerfähig bis"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_swk_category
+msgid "swk category"
+msgstr "SWK Kategorie"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_swk_city
+msgid "swk city"
+msgstr "SWK Ort"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_swk_region
+msgid "swk region"
+msgstr "SWK Region"
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_vintage_year
+#: model:ir.ui.menu,name:ov_wine.vintage_year_menu
+msgid "vintage year"
+msgstr "Jahrgang"
+
+#. module: ov_wine
+#: model_terms:ir.ui.view,arch_db:ov_wine.swk_report_template
+msgid "weiss"
+msgstr ""
+
+#. module: ov_wine
+#: model:ir.model,name:ov_wine.model_ov_wine_producer
+msgid "wine producer description"
+msgstr "Wein Hersteller Beschreibung"
+
+#. module: ov_wine
+#: model:ir.ui.menu,name:ov_wine.winetype_menu
+msgid "winetype"
+msgstr "Weinart"
