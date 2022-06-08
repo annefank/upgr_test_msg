@@ -19,7 +19,7 @@ This addon extends the product-structure with specific wine-attributes.
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'sale', 'product', 'account', 'web','website','web_enterprise','website_sale'],
+    'depends': ['base', 'sale', 'product', 'account', 'web','website','web_enterprise','website_sale','stock'],
 
     # always loaded
     'data': [
